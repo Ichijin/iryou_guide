@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_45のコピー_4" data-name="レイヤー_45のコピー_4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 60">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        font-family: RoGSanSrfStdN-Bd-90ms-RKSJ-H, 'Ro GSan Serif StdN';
+        font-size: 36px;
+        letter-spacing: -.02em;
+      }
+
+      .cls-2 {
+        fill: #e57619;
+      }
+    </style>
+  </defs>
+  <rect class="cls-2" x=".38" y=".33" width="150" height="60" rx="22.24" ry="22.24"/>
+  <text class="cls-1" transform="translate(4.57 44.08) scale(.81 1)"><tspan x="0" y="0">専門学校他</tspan></text>
+</svg>

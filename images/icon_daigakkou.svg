@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_45のコピー_5" data-name="レイヤー_45のコピー_5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 60">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: .02em;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        font-family: RoGSanSrfStdN-Bd-90ms-RKSJ-H, 'Ro GSan Serif StdN';
+        font-size: 37px;
+      }
+
+      .cls-3 {
+        letter-spacing: .04em;
+      }
+
+      .cls-4 {
+        fill: #79bd33;
+      }
+    </style>
+  </defs>
+  <rect class="cls-4" x=".14" y=".07" width="150" height="60" rx="22.24" ry="22.24"/>
+  <text class="cls-2" transform="translate(5.88 44.96) scale(.74 1)"><tspan class="cls-1" x="0" y="0">省庁大学</tspan><tspan class="cls-3" x="150.96" y="0">校</tspan></text>
+</svg>

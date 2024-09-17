@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 181.2 181.2">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #999;
+      }
+    </style>
+  </defs>
+  <!-- Generator: Adobe Illustrator 28.6.0, SVG Export Plug-In . SVG Version: 1.2.0 Build 709)  -->
+  <g>
+    <g id="_レイヤー_1" data-name="レイヤー_1">
+      <rect class="cls-1" x="-25.1" y="66.6" width="231.4" height="48.1" rx="19.8" ry="19.8" transform="translate(218.7 90.6) rotate(135)"/>
+      <rect class="cls-1" x="-25.1" y="66.6" width="231.4" height="48.1" rx="19.8" ry="19.8" transform="translate(90.6 218.7) rotate(-135)"/>
+    </g>
+  </g>
+</svg>

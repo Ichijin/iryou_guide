@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_45のコピー_7" data-name="レイヤー_45のコピー_7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 60">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        font-family: RoGSanSrfStdN-Bd-90ms-RKSJ-H, 'Ro GSan Serif StdN';
+        font-size: 28px;
+      }
+
+      .cls-2 {
+        fill: #2eafe0;
+      }
+    </style>
+  </defs>
+  <rect class="cls-2" y="0" width="150" height="60" rx="22.24" ry="22.24"/>
+  <text class="cls-1" transform="translate(.71 42.57) scale(.76 1)"><tspan x="0" y="0">専門職短期大学</tspan></text>
+</svg>

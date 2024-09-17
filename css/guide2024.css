@@ -1,0 +1,1175 @@
+@charset "utf-8";
+/**ここから各ページ共通**/
+body,h1,h2,h3,h4,h5,h6,ul,li,p,img,th,td,dl,dt,dd,span {
+  font-family:"ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 16px;
+  letter-spacing: .025em;
+  line-height: 1.8;
+  margin: 0;
+  padding:0;
+  overflow-x: hidden;
+}
+th,td,dl,dt,dd{
+	box-sizing:border-box;
+	border:none;
+	border-collapse:collapse;
+}
+a{
+	text-decoration:none;
+	color:#000;
+}
+.pagetop {
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  left: 30px;
+  bottom: 30px;
+  background: #fff;
+  border-radius: 50%;
+  border:1px solid #ccc;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  cursor: pointer;
+}
+.pagetop__arrow {
+  display: block;
+  height: 10px;
+  width: 10px;
+  border-top: 3px solid #000;
+  border-right: 3px solid #000;
+  transform: translateY(20%) rotate(-45deg);
+}
+.pageback {
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  background: #fff;
+  border:1px solid #ccc;
+  border-radius: 50%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  cursor: pointer;
+}
+.pageback a{
+	background:#FFF;
+}
+footer{
+	background:#e9ddc2;
+}
+footer p{
+/**	background:#e9ddc2;**/
+	color:#FFF;
+	text-align:center;
+	margin:10px auto 0;
+	padding:10px;
+}
+footer p.classification{
+	color:#777;
+	font-size:15px;
+}
+footer .sitemap{
+	max-width:1024px;
+	width:100%;
+	margin:10px auto;
+	display:flex;
+	justify-content:space-between;
+	flex-wrap:wrap;
+	align-items:center;
+}
+footer .sitemap ul.pageLink01,
+footer .sitemap ul.pageLink02{
+	margin:30px auto 0;
+	width:45%;
+	text-align:center;
+	}
+footer .sitemap .pageLink01 li,
+footer .sitemap .pageLink02 li{
+	margin:5px;
+	display:flex;
+	justify-content:center;
+}
+footer .sitemap .pageLink01 li{
+	padding:15px 0;
+}
+
+footer .sitemap .pageLink01 li a,
+footer .sitemap .pageLink02 li a{
+	display:block;
+}
+footer .sitemap .pageLink01 li a img{
+	width:250px;
+	height:auto;
+	object-fit:contain;
+}
+footer .sitemap .pageLink02 li a img{
+	max-width:200px;
+	height:auto;
+	object-fit:contain;
+}
+/**ここまで各ページ共通**/
+/**index**/
+.container{
+	max-width:1024px;
+	width:calc(100% - 20px);
+	margin:0 auto;
+	padding:0 10px;
+}
+button.SearchButton{
+	width:10em;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	margin:50px auto;
+	border-radius:10px;
+	background:#F99292;
+	padding:10px 15px;
+	font-size:18px;
+	border:none;
+	color:#FFF;
+	font-weight:700;
+	text-align:center;
+	position:relative;
+	box-shadow: -5px -5px 5px rgba(0,0,0,.2) inset;
+	cursor:pointer;
+}
+/**.SearchButton.click{
+    background: #1a720d;
+    color: #FFF;
+}**/
+button.SearchButton:hover{
+    background: #1a720d;
+    color: #FFF;
+	box-shadow: -5px -5px 5px rgba(123,143,122,.5) inset;
+	cursor:pointer;
+}
+/**#btn-submit{
+	background:#F99292;
+	font-size:inherit;
+	border:none;
+	color:#FFF;
+	font-weight:700;
+}**/
+/**#btn-submit{
+	background:transparent;
+	font-size:inherit;
+	border:none;
+	color:#FFF;
+	font-weight:700;
+}**/
+ul{
+	list-style:none;
+}
+.indexHeader{
+	display:flex;
+	justify-content:space-between;
+	width:100%;
+	position:relative;
+}
+h1{
+	color:#f094b0;
+/**	white-space:nowrap;
+	overflow:hidden;
+	text-indent:100%;**/
+}
+.h1_logo img{
+	display:none;
+	max-width:120px;
+	margin:10px;
+	height:auto;
+	object-fit:contain;
+}
+.top{
+	position:relative;
+/**	background:url("../guide/images/test0701.jpg") no-repeat center/ cover;**/
+	background:url(https://www.ishin.jp/iryou_guide/images/background_pc_0710.webp) no-repeat center/ cover;
+	width: 100%;
+    height: 100vh;
+	z-index:1;
+}
+.top p{
+	position:absolute;
+	/**color:#F99292;**/
+/**	font-size:50px;**/
+	z-index:100;
+	bottom:8%;
+	right:44%;
+	/**width:10em;
+	color: #FFF;
+	text-align:center;
+	text-shadow: 4px 0px 3px rgba(248, 9, 9, 0.94);**/
+	text-indent:100%;
+	overflow:hidden;
+	white-space:nowrap;
+	background:url(https://www.ishin.jp/iryou_guide/images/top_p_title.svg) no-repeat center/ contain;
+	width:432px;
+	height:226px;
+}
+.top h2{
+	white-space:nowrap;
+	overflow:hidden;
+	text-indent:100%;
+}
+.top .search{
+	position:absolute;
+	top:10px;
+	left:50%;
+	z-index:3;
+}
+.search-box {
+    position: relative;
+    display: flex;
+    width: 100%;
+}
+.search-box input[type="text"] {
+    flex-grow: 1;
+    padding: 1.2rem 0 1.2rem 1rem;
+    border: 1px solid #F99292;
+    border-radius: 1.5rem;
+	font-family:"ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+.search-box button {
+    position: absolute;
+    top: -0.05rem;
+    right: 0;
+    cursor: pointer;
+    padding: 0.7rem 0.7rem 0.9rem 1rem;
+    border-radius: 0 1.5rem 1.5rem 0;
+    border: none;
+    background: none;
+    color: #333;
+    font-size: 2rem;
+    transition:0.5s;
+}
+.subinfo{
+	display:flex;
+	justify-content:space-between;
+	width:100%;
+	align-items:center;
+}
+.subinfo p.subLeft{
+	width:60%;
+	text-align:left;
+	font-size:13px;
+	color:#777;
+	padding:0 10px;
+}
+p.comment{
+	width:40%;
+	text-align:right;
+}
+p.comment a{
+	font-size:13px;
+	color:#777;
+	padding:0 10px;
+}
+p.comment a:hover{
+	color:#555;
+}
+.menu{
+    height: 50px;
+    position: absolute;
+    right: 50px;
+    top: 50px;
+    width: 50px;
+    z-index: 999;
+}
+.menu__line{
+    background: #F99292;
+    display: block;
+    height: 3px;
+    position: absolute;
+    transition:transform .3s;
+    width: 100%;
+}
+.menu__line--center{
+    top: 24px;
+}
+.menu__line--bottom{
+    bottom: 0;
+}
+.menu__line--top.active{
+    top: 24px;
+    transform: rotate(45deg);
+}
+.menu__line--center.active{
+    transform:scaleX(0);
+}
+.menu__line--bottom.active{
+    bottom: 24px;
+    transform: rotate(135deg);
+	background:#FFF;
+}
+.gnav{
+    background: rgba(0,0,0,0.6);
+    display: none;
+    height: 100%;
+    position: fixed;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+    width: 100%;
+    z-index: 998;
+}
+.gnav__wrap{
+    align-items:center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+}
+.gnav__menu__item::-webkit-scrollbar{
+  display:none;
+}
+.gnav__menu__item{
+    margin: 30px 0 ;
+}
+.gnav__menu__item a{
+	color: #fff;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 5px;
+    text-decoration: none;
+    transition: .5s;
+}
+.gnav__menu__item a:hover{
+    color: #000;
+}
+/**index**/
+.contents_wrap{
+ width:100%;
+ margin:0 auto;
+}
+.drop_menu_flex{
+ display: flex;
+ display: -webkit-box;
+ display: -webkit-flex;
+ flex-wrap: wrap;
+ -webkit-flex-wrap: wrap;
+ justify-content: flex-start;
+ -webkit-box-pack: flex-start;
+ -webkit-justify-content: flex-start;
+	font-size:18px;
+}
+.drop_Menu{
+	width:44%;
+	display:flex;
+	justify-content:space-between;
+	flex-wrap:nowrap;
+	margin:2%;
+}
+.drop_Menu p{
+	width:180px;
+	text-align:center;
+}
+.drop_Menu .select01{
+	width:calc(100% - 200px);
+	height:29px;
+	border-radius:5px;
+	border:1px solid #999;
+	font-size:18px;
+}
+.drop_Menu .select_date{
+	width:calc(100% - 200px);
+	display:flex;
+	flex-wrap:wrap;
+}
+.drop_Menu .select_date input:first-child{
+	margin:auto 10px auto 0;
+}
+.drop_Menu .select_date input:last-child{
+	margin:0 0 10px auto;
+}
+input[type="date"]{
+	padding:10px;
+	text-align:center;
+	border-radius:5px;
+	border:1px solid #999;
+}
+.drop_Menu .select_date span{
+	display:inline-block;
+	width:100%;
+	text-align:center;
+	margin:0 auto;
+}
+/**index**/
+/**schoolpage**/
+.schoolHeader{
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	z-index:997;
+	background:#FCECEA;
+}
+.schoolHeader .header-area{
+	display:flex;
+	justify-content:space-between;
+	flex-wrap:wrap;
+	align-items:center;
+}
+.schoolHeader .header-area h1{
+	font-size:24px;
+	padding:10px 0 0 10px;
+}
+.schoolHeader .header-area p small{
+	font-size:14px;
+	color:#999;
+	padding-left:10px;
+}
+.schoolPage{
+	margin:330px auto 0;
+}
+summary{
+	display:block;
+}
+summary::-webkit-details-marker {
+	display: none;
+}
+details{
+	width:100%;
+}
+details.school summary.scHead,
+details.schoolInnerFaculty summary.department,
+details.schoolInnerApplication summary.testway,
+details.basis summary.basisHeader{
+	position:relative;
+	z-index:0;
+}
+details.school summary.scHead:after,
+details.schoolInnerFaculty summary.department:after,
+details.schoolInnerApplication summary.testway:after,
+details.basis summary.basisHeader:after{
+	position:absolute;
+	right:10px;
+	top:50%;
+	transform:translateY(-50%);
+	content: "";
+	display: inline-block;
+	width:15px;height:15px;
+	background:url(https://www.ishin.jp/iryou_guide/images/roll_plus.svg) no-repeat;
+	background-size:contain;
+	margin:0 10px;
+	z-index:0;
+	transition: transform 0.3s;
+	font-size:inherit;
+}
+details.school[open] summary.scHead:after,
+details.schoolInnerFaculty[open] summary.department:after,
+details.schoolInnerApplication[open] summary.testway:after,
+details.basis[open] summary.basisHeader:after{
+	content: "";
+	display: inline-block;
+	width:12px;height:12px;
+	background:url(https://www.ishin.jp/iryou_guide/images/roll_minus.svg) no-repeat;
+	background-size:contain;
+	margin:0 10px;
+	transition: 0.3s;
+}
+.scHead{
+	display:flex;
+	justify-content:flex-start;
+	padding:10px;
+	font-weight:900;
+	cursor:pointer;
+	transition-duration:.2s;
+	align-items:center;
+	color:#FFF;
+	margin:0 auto 10px;
+}
+ul.schoolPage li:nth-of-type(odd) .scHead{
+	background:#F99292;
+}
+ul.schoolPage li:nth-of-type(even) .scHead{
+	background:#07B467;
+}
+.scHead h3{
+	font-size:26px;
+	max-width:600px;
+}
+.scHead button{
+	border-radius:5px;
+	background:#FFF;
+	margin:0 20px;
+	border:none;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.scHead button a{
+	display:block;
+	padding:5px;
+	color:#F99292;
+	font-size:14px;
+}
+.scHead .kubun{
+	width:60px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+.scHead .kubun img{
+	width:60px;
+	object-fit:contain;
+	margin-right:10px;
+}
+.department{
+	color:#928484;
+	margin:5px 0 5px 20px;
+}
+/**.department span{
+	padding:0 5px;
+	opacity:0.3;
+}
+.department span.active{
+	opacity:1;
+}**/
+ul.schoolPage li:nth-of-type(odd) .department{
+	background:#FCECEA;
+}
+ul.schoolPage li:nth-of-type(even) .department{
+	background:#A8DBA8;
+}
+.department h4{
+	font-size:20px;
+	font-weight:600;
+	padding:10px;
+}
+.department h4:before{
+	content: "";
+	display: inline-block;
+	width:12px;height:12px;
+	background:url(https://www.ishin.jp/iryou_guide/images/roll_arrow.svg) no-repeat;
+	background-size:contain;
+	margin:0 10px;
+}
+ul.faculty{
+	margin:0 0 5px 20px;
+	width:calc(100% - 20px);
+}
+ul.faculty li{
+	display:flex;
+	width:100%;
+	flex-wrap:wrap;
+	font-size:18px;
+	align-items:center;
+	padding:5px 0;
+}
+ul.faculty li p.fac01{
+	width:30%;
+	display:block;
+	font-size:18px;
+}
+ul.faculty li p.fac02{
+	width:70%;
+}
+ul.faculty li img{
+	width:56px;
+	height:auto;
+	object-fit:contain;
+	margin:5px;
+}
+ul.faculty li.caution_about_fee{
+	font-size:15px;
+}
+.testway{
+	color:#FFF;
+	margin:5px 0 5px 40px;
+	font-size:20px;
+	font-weight:normal;
+	padding:10px;
+}
+ul.schoolPage li:nth-of-type(odd) .testway{
+	background:#EE817B;
+}
+ul.schoolPage li:nth-of-type(even) .testway{
+	background:#79BD9A;
+}
+
+.testway:before{
+	content: "";
+	display: inline-block;
+	width:12px;height:12px;
+	background:url(https://www.ishin.jp/iryou_guide/images/roll_doublearrow.svg) no-repeat;
+	background-size:contain;
+	margin:0 10px;
+}
+
+#search h3{
+	background: #F99292;
+	color:#FFF;
+	padding:5px;
+	font-size:16px;
+	width:8em;
+	text-align:center;
+	margin:10px 0;
+	border-radius: 10px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+#search .search_caption p{	
+/**position:absolute;	
+top:0;	
+right:0;**/	
+	color:#F99292;	
+/**border-radius:10px;	
+padding:5px;	
+color:#FFF;**/	
+	font-size:16px;
+	font-weight:700;
+}
+.application_inner{
+	margin:0px 0 5px 40px;
+}
+.basis .basisHeader{
+	background:#FFF;
+	color:#777;
+	font-weight:600;
+	font-size:20px;
+	padding:10px;
+	border-left:10px solid #777;
+	margin:0 auto 10px;
+}
+.basis h5{
+	position:relative;
+	width:calc(100% - 35px);
+	padding:20px 10px 72px;
+	background:#ccc;
+	margin-left:15px;
+}
+.basis h5 span.pref{
+	position:absolute;
+	font-size:16px;
+	display:block;
+	top:5px;
+	left:10px;
+	border-radius:10px;
+	background:#fff;
+	color:#777;
+	text-align:center;
+	width:4.5em;
+	height:32px;
+	line-height:32px;
+}
+.basis h5 span.schoolname{
+	position:absolute;
+	bottom:5px;
+	left:5px;
+	color:#FFF;
+	font-size:24px;
+	padding:5px;
+	font-weight:900;
+}
+.basis h5 span.schoolname a{
+/**	position:absolute;
+	bottom:5px;
+	left:5px;**/
+	color:#FFF;
+	font-size:24px;
+	padding:5px;
+	font-weight:900;
+}
+.info{
+	display:flex;
+	justify-content:space-between;
+	width:100%;
+	margin:10px auto 30px;
+}
+.info dl{
+	width:calc(100% - 360px);
+	margin:auto;
+	display:flex;
+	justify-content:flex-start;
+	flex-wrap:wrap;
+}
+.info dl dt{
+	width:6em;
+	font-weight:600;
+	font-size:16px;
+	text-align:center;
+}
+.info dl dt.pamphlet_dt,
+.info dl dt.application_dt{
+	width:6em;
+}
+.info dl dd{
+	width:calc(100% - 6em);
+	font-size:16px;
+}
+.info dl dd.pamphlet_dd,
+.info dl dd.application_dd{
+	width:calc(50% - 6em);
+	font-size:16px;
+}
+.info iframe{
+	text-align:center;
+ 	border: none;
+ 	margin: 0px auto;
+ 	max-width: 350px;
+ 	max-height: 350px;
+ 	overflow: hidden;
+}
+.info li i,.info dt i{
+	padding-right:.5em;
+	font-weight:900;
+}
+.info dt img{
+	max-width:24px;
+	height:auto;
+	object-fit:contain;
+}
+dl.search_result{
+	width:100%;
+	padding:1%;
+	display:grid;
+	grid-template-columns: 37% 47% 8%;
+	gap:1%;
+	font-size:20px;
+	border-bottom:3px solid #78BBE6;
+	align-items:center;
+}
+dl.search_result dd.result{
+	color:#78BBE6;
+	font-size:140%;
+	font-weight:700;
+}
+p.search_word{
+	font-size:16px;
+	color:inherit;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+p.search_word strong{
+	font-size:inherit;
+	border-radius:15px;
+	padding:5px;
+	border:none;
+	background:#78BBE6;
+	color:#FFF;
+	margin-right:10px;
+}
+p.search_word span{
+	color:inherit;
+}
+p.search_word span:not(:last-child):after{
+	content: "";
+	display: inline-block;
+	width:12px;height:12px;
+	background:url(https://www.ishin.jp/iryou_guide/images/roll_xmark.svg) no-repeat;
+	background-size:contain;
+	margin:0 10px;
+}
+p.search_word::-webkit-scrollbar{
+  display:none;
+}
+.heading{
+	width:100%;
+	text-align:left;
+	border-bottom:1px dotted #333;
+	margin:0 0 10px 0;
+	font-size:16px;
+}
+.detail{
+	display:flex;
+	flex-wrap:wrap;
+	width:100%;
+	align-items:center;
+}
+.detail p.average{
+	padding-right:5px;
+	width:10em;
+	font-size:16px;
+	text-align:center;
+}
+.detail img{
+	width:56px;
+	padding:0;
+	margin:5px;
+}
+table{
+	margin:0 auto 10px;
+	width:90%;
+}
+table tr{
+	border:1px dotted #333;
+	padding:10px 0 5px;}
+table td img{
+	width:56px;
+	object-fit:contain;
+	margin-right:5px;
+}
+table th, table td{
+	font-weight:normal;
+	font-size:16px;
+}
+.terms{
+	margin:10px auto;
+	width:calc(100% - 40px);
+	display:grid;
+	grid-template-columns:20% 85px 85px 85px 85px 85px;
+	place-items: center; 
+	gap:5px;
+}
+.terms img{
+	width:56px;
+	object-fit:contain;
+}
+.date{
+	display:grid;
+	grid-template-columns: 40% 5% 40%;
+	font-size:16px;
+	gap:3%;
+	padding:5%;
+	text-aling:center;
+}
+.caption{
+	max-width:350px;
+	width:100%;
+	margin:0 auto;
+}
+.caption table th{
+	width:20%;
+}
+.caption table th img{
+	width:50%;
+	object-fit:contain;
+}
+.caption table td{
+	width:80%;
+	font-size:15px;
+}
+p.toppage_ex{
+	color:inherit;
+	text-align:left;
+}
+.sp{
+	display:none;
+}
+@media (max-width: 767px) {
+.top{
+/**	background:url(../guide/images/test0701_sp.jpg) no-repeat center/ cover;**/
+	background:url(https://www.ishin.jp/iryou_guide/images/background_sp_0710.webp) no-repeat center/ cover;
+	width: 100%;
+    height: 80vh;
+}
+.top p{
+	/**font-size:30px;
+	text-align:left;**/
+	bottom:5%;
+	right:50%;
+	left:50%;
+	transform:translateX(-50%);
+	width:380px;
+	height:182px;
+}
+.menu{
+	height:40px;
+    right: 20px;
+    top: 30px;
+    width: 40px;
+}
+.menu__line--center{
+    top: 19px;
+}
+.menu__line--top.active{
+    top: 19px;
+}
+.menu__line--bottom.active{
+    bottom: 17px;
+}
+.gnav__menu__item a{
+	font-size:1.6em;
+	}
+/**.container{
+	width:100%;
+	}**/
+h1 img{
+	max-width:56px;
+}
+.scHead h3{
+	font-size:20px;
+	max-width:300px;
+	}
+.schead button{
+	margin:0 5px;
+	width:58px;
+	}
+.scHead button a{
+	margin:0 5px;
+	width:60px;
+	font-size:12px;
+}
+.department h4{
+	font-size:18px;
+}
+ul.faculty li{
+	dislay:block;
+	font-size:15px;
+	}
+ul.faculty li p,
+ul.faculty li p.fac01,
+ul.faculty li p.fac02{
+	font-size:15px;
+	padding-left:5px;
+	width:calc(100% - 5px);
+}
+ul.faculty li p.fac02{
+	padding-left:15px;
+	width:calc(100% - 15px);
+}
+ul.faculty li.caution_about_fee{
+	font-size:14px;
+}
+ul.faculty li img{
+	width:45px;
+}
+.testway{
+	margin:5px 0 5px 20px;
+	font-size:18px;
+}
+.basis .basisHeader{
+	font-size:18px;}
+.detail img{
+	width:45px;
+	}
+.top .search{
+	top:30px;
+	left:34%;
+}
+footer .sitemap .pageLink01,
+footer .sitemap .pageLink02{
+	margin:0 auto;
+	padding:0;
+	}
+footer .sitemap .pageLink01 li a img{
+	width:130px;
+	height:auto;
+	object-fit:contain;
+}
+footer .sitemap .pageLink02 li a img{
+	max-width:90px;
+	height:auto;
+	object-fit:contain;
+}
+footer p.classification{
+	font-size:12px;
+}
+p.search_word{
+	font-size:13px;
+	padding:3px;
+	}
+p.search_word span:not(:last-child):after{
+	padding:0 5px;
+}
+.schoolHeader{
+	display:block;
+	width:100%;
+}
+.header-area{
+	display:flex;
+	justify-content:space-between;
+	width:100%;
+	flex-wrap:nowrap;
+	}
+.kubun img{
+	width:45px;
+	object-fit:contain;
+	margin-right:5px;
+}
+.basis h5 .facility img,.basis h5 .facility img:last-of-type{
+	width:35px;
+	margin:3px;
+}
+.info{
+	display:block;
+	padding:0 0 280px 0;
+	position:relative;
+}
+.info dl{
+	width:100%;
+	margin:auto;
+}
+.info dl dt,
+.info dl dd{
+	font-size:14px;
+	}
+.info iframe{
+	position:absolute;
+	bottom:50px;
+	left:0;
+	right:0;
+	margin: 0 auto 10px;
+	width:300px;
+	height:200px;
+	padding:0;
+}
+.basis h5 span.schoolname{
+	font-size:16px;
+}
+.basis h5 .facility{
+	top:50%;
+	transform:translateY(-50%);
+	flex-wrap:wrap;
+	width:55%;
+	}
+
+p.search_word span{
+	font-size:11px;
+	padding:1px;
+}
+dl.search_result{
+	display:grid;
+	grid-template-columns: 37% 37% 18%;
+	gap:1%;
+	font-size:14px;
+	padding:0;
+}
+
+.pagetop__arrow {
+  border-top: 1px solid #000;
+  border-right: 1px solid #000;
+}
+.drop_menu_flex{
+	display:block;
+	width:100%;
+	font-size:15px;
+}
+.drop_Menu,
+.drop_Menu:nth-of-type(2n){
+	width:100%;
+	margin:5px auto;
+	}
+.drop_Menu p{
+	width:130px;
+}
+.drop_Menu .select_date{
+	max-width:60%;
+	align-items:center;
+	}
+.drop_Menu .select_date span{
+	width:5%;
+}
+.drop_Menu .select01{
+	font-size:13px;
+}
+.sp{display:block;}
+#search .search_caption p{
+	font-weight:600;
+	padding-left:3em;
+	text-indent:-3em;
+}
+}
+@media (max-width: 400px) {
+.h1_logo img{
+	max-width:80px;
+	margin:10px;
+	height:auto;
+	object-fit:contain;
+}
+.top .search{
+	top:15px;
+}
+.top p{
+	/**font-size:30px;
+	text-align:left;**/
+	bottom:10px;
+	right:50%;
+	left:50%;
+	transform:translateX(-50%);
+	width:100%;
+	/**object-fit:contain;**/
+}
+.schoolHeader{
+	padding:0 5px;
+	}
+.schoolHeader .header-area h1{
+	font-size:15px;
+	padding:5px 0 0 5px;
+}
+.schoolHeader .header-area p small{
+	font-size:12px;
+}
+.container{
+	padding:0 5px;
+	width:calc(100% - 10px);
+	}
+dl.search_result{
+	width:calc(100% - 10px);
+	}
+.scHead h3{
+	font-size:15px;
+	width:188px;
+	}
+.scHead button{
+/**	margin:0 10px;
+	width:58px;**/
+	}
+details.school summary.scHead:after,
+details.schoolInnerFaculty summary.department:after,
+details.schoolInnerApplication summary.testway:after,
+details.basis summary.basisHeader:after{
+	margin:0 3px;	
+	}
+.scHead button a{
+	margin:0 3px;
+	width:43px;
+	font-size:10px;
+	}
+.department h4{
+	font-size:15px;
+}
+ul.faculty li,
+ul.faculty li p,
+ul.faculty li p.fac01,
+ul.faculty li p.fac02,
+.heading,
+.detail p.average{
+	font-size:14px;
+}
+ul.faculty li.caution_about_fee{
+	font-size:12px;
+}
+.testway{
+	margin:5px 0 5px 20px;
+	font-size:16px;
+}
+.basis .basisHeader{
+	font-size:16px;}
+table th, table td{
+	font-weight:normal;
+	font-size:14px;
+}
+.menu{
+	height:32px;
+    right: 15px;
+    top: 30px;
+    width: 32px;
+}
+.menu__line--center{
+    top:15px;
+}
+.menu__line--top.active{
+    top: 14px;
+}
+.menu__line--bottom.active{
+    bottom: 16px;
+}
+
+.schoolPage{
+	margin:282px auto 0;
+}
+.drop_Menu .select_date span{
+	width:100%;
+}
+.subinfo{
+	display:block;
+	width:calc(100% - 10px);
+}
+.subinfo p.subLeft, p.comment a{
+	width:100%;
+	font-size:12px;
+	}
+}
