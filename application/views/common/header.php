@@ -161,26 +161,6 @@ window.onpageshow = function (event) {
       background: #f2f2f2;
   }
 
-/**.loading {
-  height: 100vh;
-  width: 100vw;
-  cursor: progress;
-  
-  &::before{
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 5em;
-    height: 5em;
-    margin-top: -2.5em;
-    margin-left: -2.5em;
-    border-radius: 50%;
-    border: 0.25em solid #ccc;
-    border-top-color: #333;
-    animation: spinner 1.5s linear infinite;
-  }
-}**/
 .loading{
   height: 100vh;
   width: 100vw;
